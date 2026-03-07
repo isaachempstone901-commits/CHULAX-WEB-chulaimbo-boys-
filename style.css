@@ -1,0 +1,55 @@
+/* 1. Updated Body for Sticky Footer */
+html, body {
+    height: 95%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    display: flex;
+    flex-direction: column; /* Allows main to expand and push footer down */
+}
+
+/* 2. Allow main to grow */
+main {
+    flex: 1; /* This pushes the footer to the bottom of the page */
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    width: 90%; /* Better for mobile screens */
+}
+
+/* 3. Responsive Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allows links to wrap to the next line on small phones */
+}
+
+nav ul li {
+    margin: 5px 15px; /* Added vertical margin for wrapped links */
+}
+
+/* 4. Keep your existing Image and Header styles... */
+header {
+    background-color: #0044ccd2;
+    color: rgb(13, 9, 9);
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* 5. Footer Fix */
+footer {
+    background-color: #0044cc;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+    margin-top: auto; /* Final insurance for the sticky footer */
+}
